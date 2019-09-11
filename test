@@ -1,0 +1,14 @@
+//pemanggilan library axios
+const axios = require('axios');
+
+//URL api
+const url = 'https://rickandmortyapi.com/api/character';
+
+//action get NETHOD
+axios.get(url).then(res => {
+    //jika success akan tertampil disini
+    console.log(res);
+}).catch(err => {
+    //jika error akan tertampil disini
+    console.log(err);
+})
